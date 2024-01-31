@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import User, Book, BookDetails, BorrowedBooks
 
+# admin registring of all models
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
     list_display = ('UserID', 'Name', 'Email', 'MembershipDate')

@@ -3,6 +3,7 @@ from rest_framework.authentication import BaseAuthentication
 from rest_framework.exceptions import AuthenticationFailed
 from rest_framework.authtoken.models import Token
 
+# Custom token authentication class for token authentication
 class CustomTokenAuthentication(BaseAuthentication):
     def authenticate(self, request):
         auth_header = request.headers.get('Authorization')

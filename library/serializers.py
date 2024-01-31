@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import User, Book, BookDetails, BorrowedBooks
 
+# Serializers that define the API representation.
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
