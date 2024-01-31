@@ -10,7 +10,7 @@ This is a library management system API that allows users to manage books, users
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Bijay4444/library_management_system.git)https://github.com/Bijay4444/library_management_system.git
+   git clone https://github.com/Bijay4444/library_management_system.git
 
 2. Create a virtual environment (optional but recommended):
     _bash:-_ python -m venv venv
@@ -32,16 +32,20 @@ This is a library management system API that allows users to manage books, users
 
 **Note**: Remeber to create a superuser and login to admin example: "http://127.0.0.1:8000/admin" and take authentication JWT token from there
       OR, You can take the token from POSTMAN using POST method with "http://127.0.0.1:8000/auth/login/ and provide body JSON like:-
+          
           #as per your created super user
           {
             "username": "admin",
-            "password": "admin"
+            "password": "admin"          
            }
+
            then you will get the result in body like this:
            {
               "token": "b4e8166c716423969057edf18e4debedccf75883"
-          }
-        Finally, use this token while sending request by including it Headers of POSTMAN like: 
+           }
+
+          Finally, use this token while sending request by including it Headers of POSTMAN like: 
+
               "key field" : Authorization
               "Value field" : Token b4e8166c716423969057edf18e4debedccf75883
               
